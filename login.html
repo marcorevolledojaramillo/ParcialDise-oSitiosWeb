@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="./css/login.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="./img/socketChat.png"
+                        class="img-fluid" alt="Sample image">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form>
+                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                            <p class="lead fw-normal mb-0 me-3">Iniciar Sesion Con</p>
+                                                       
+
+                            <div class="col col-md-4">
+                                <div id="g_id_onload"
+                                    data-client_id="561855258953-17l6qcakm2a4scj5lu3giq3rusamk3p6.apps.googleusercontent.com"
+                                    data-callback="handleCredentialResponse" data-auto_prompt="false">
+                
+                                </div>
+                                <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                                    data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                                </div>
+                
+                            </div>
+                        </div>
+
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0">O</p>
+                        </div>
+
+                        <!-- Ingresar Email -->
+                        <div class="form-outline mb-4">
+                            <input type="email" name="correo" id="correo" class="form-control form-control-lg"
+                                placeholder="Ingrese un correo valido" />
+                            <label class="form-label" for="correo">Correo</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-3">
+                            <input type="password" name="password" id="password" class="form-control form-control-lg"
+                                placeholder="Ingrese su contraseña" />
+                            <label class="form-label" for="contraseña">Contraseña</label>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <!-- <div class="form-check mb-0">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label" for="form2Example3">
+                                    Remember me
+                                </label> 
+                            </div>
+                            <a href="#!" class="text-body">Forgot password?</a>
+                        </div>-->
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <a type="submit" href="chat.html" class="btn btn-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Ingresar</a>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">Aún no tienes una cuenta? <a data-bs-toggle="modal" href="#ModalRegistrarse" role="button"
+                                    class="link-danger">Registrarse</a></p>
+                        </div>
+
+                        
+
+
+                    </form>
+
+                    
+                </div>
+                <div class="text-center text-lg-start mt-4 pt-2">
+                    <a href="index.html" ><img src="img/back-btn.svg" alt="Bakc" srcset=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="ModalRegistrarse" aria-hidden="true" aria-labelledby="ModalRegistrarse" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <h2 class="fw-bold mb-0">Registrate Gratis</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-5 pt-0">
+                    <form class="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" id="correoInput"
+                                placeholder="correo@dominio.com">
+                            <label for="floatingInput">Correo Electronico</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" id="contrasenaInput"
+                                placeholder="Contraseña">
+                            <label for="floatingPassword">Contraseña</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Registrarse</button>
+                        <small class="text-muted">Al presionar registrarte, aceptas los terminos y condiciones.</small>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Registrate Con</h2>
+                        
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                            <svg class="bi me-1" width="16" height="16">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                            Google
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+
+    
+</body>
+
+</html>
